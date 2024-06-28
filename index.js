@@ -1,10 +1,6 @@
 // Define and export receivesAFunction
 function receivesAFunction(callback) {
-    if (typeof callback === 'function') {
-      callback();
-    } else {
-      throw new Error("Expected a function");
-    }
+        callback();
   }
   
   // Define and export returnsANamedFunction
@@ -20,13 +16,7 @@ function receivesAFunction(callback) {
   function returnsAnAnonymousFunction() {
     // Anonymous function definition
     return function() {
-      // Optional: implementation details
+    
     };
   }
   
-  // Export the functions
-  module.exports = {
-    receivesAFunction,
-    returnsANamedFunction,
-    returnsAnAnonymousFunction
-  };
